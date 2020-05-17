@@ -4,15 +4,26 @@ This repo is meant to be cloned as a starter template for a new Express project.
 
 To start a new project using this repo:
 
-1. Create a new repo in your own GitHub account.
+1. Create a new repo in your own GitHub account, but do not initialize it with a README.
 2. Clone this repo.
-3. At the root of this cloned repo, run `git remote set-url origin your.git.url/here`.
-4. Verify that the new origin is set to your repo with `git remote -v` (should print your.git.url/here).
+3. Change the name of the project in your local file system from `express-babel-template` to `your-project-name`.
+4. Change the name of the project in package.json and package-lock.json from `express-babel-template` to `your-project-name`.
 5. Run `npm i`.
-6. Run `npm run`.
+6. Run `npm run watch:dev`.
 7. Open [http://localhost:3000/](http://localhost:3000/) and verify that you see the boilerplate html from [public/index.html](public/index.html).
-8. Change the name of the project in package.json and package-lock.json from `express-babel-template` to `your-project-name`.
-9. Add/commit/push and you have the makings of a new project, enjoy!
+8. Run `git remote rm origin` to delete the connection to the original cloned repo
+
+> FYI:
+
+-   you can run `git remote -v` before/between these steps to see how the remote url is changing
+-   these steps should also be visible on the GitHub GUI of your newly created repo; if they are not, check to be sure that you created it without a README
+
+9. Delete the contents of this ever-so-well-written README, you'll want to add notes about your own work instead.
+10. Run `git remote add origin your.git.url/here`, and verify it worked by running `git remote -v` and checking that it prints 'origin your.git.url/here' to the console.
+11. Add/commit any modified files and then run `git push -u origin master`.
+12. Refresh your GitHub repo page -- you should have the makings of a new project, enjoy!
+
+---
 
 Notes:
 
